@@ -1,6 +1,6 @@
 # Module 1 / Lab 0: EC2 Basics
 
-Launch, connect, observe, repeat. Three separate EC2 deployments from a saved launch template (Amazon Linux 2023 + the SEIR User Data script), each reached over SSH, each with a distinct public IPv4 address.
+Launch, connect, observe, repeat. I created an EC2 launch template (Amazon Linux 2023 + the SEIR User Data script) and launched instances from it, connecting to each one over SSH.
 
 **Region:** us-east-2 (Ohio)
 **Instance type:** t3.micro
@@ -11,12 +11,11 @@ Launch, connect, observe, repeat. Three separate EC2 deployments from a saved la
 | Deployment | Public IPv4 address | Connection method | Screenshot | Instance terminated? |
 |---|---|---|---|---|
 | 1 | `3.23.115.97` | SSH | [deployment-1-ssh-dashboard.png](screenshots/deployment-1-ssh-dashboard.png) | Yes |
-| 2 | `3.21.127.147` | TODO | [web index](screenshots/deployment-2-web-index.png), [worlds](screenshots/deployment-2-web-worlds.png), [hyperdrive](screenshots/deployment-2-web-hyperdrive.png) | Yes |
-| 3 | `TODO` | SSH | `screenshots/deployment-3.png` | TODO |
+| 2 | `3.21.127.147` | SSH | [web index](screenshots/deployment-2-web-index.png), [worlds](screenshots/deployment-2-web-worlds.png), [hyperdrive](screenshots/deployment-2-web-hyperdrive.png) | Yes |
 
 ## Deployment 1
 
-Launched an Amazon Linux 2023 instance from the saved launch template and connected from my local terminal with:
+Created a launch template with Amazon Linux 2023 and the SEIR User Data script, launched an instance from it and connected from my local terminal with:
 
 ```bash
 ssh -i /c/Files/AWS/Wilber.pem ec2-user@ec2-3-23-115-97.us-east-2.compute.amazonaws.com
@@ -38,17 +37,11 @@ On first connection SSH asked me to confirm the host's ED25519 fingerprint, whic
 
 Public IPv4 `3.21.127.147`. The instance served the web pages below over HTTP on port 80 (`index.html`, `worlds.html`, `hyperdrive.html`).
 
-Launched from the same saved launch template as Deployment 1. Besides the SEIR dashboard, I used this instance to host a small custom static site ("Outer Rim Galactic Archives") that I built with the help of an AI assistant, served by Apache on port 80. The screenshots show the three pages loading from the instance's public IPv4.
-
-TODO: add the SSH dashboard screenshot for this instance.
+Launched from the launch template I created. Besides the SEIR dashboard, I used this instance to host a small custom static site ("Outer Rim Galactic Archives") that I built with the help of an AI assistant, served by Apache on port 80. The screenshots show the three pages loading from the instance's public IPv4.
 
 ![Deployment 2 index](screenshots/deployment-2-web-index.png)
 ![Deployment 2 worlds](screenshots/deployment-2-web-worlds.png)
 ![Deployment 2 hyperdrive](screenshots/deployment-2-web-hyperdrive.png)
-
-## Deployment 3
-
-TODO
 
 ## What the dashboard tells me
 
@@ -61,11 +54,7 @@ Readings from Deployment 1:
 
 ## What got easier with repetition
 
-Knowing what to change and what to leave alone. On the first launch every setting looked important. By repeating the process from the launch template, it became clear which parts actually needed my input (instance type, key pair, inbound SSH rule) and which should stay at their defaults, such as the security group's outbound rules.
-
-## Errors and how I fixed them
-
-TODO
+Knowing what to change and what to leave alone. On the first launch every setting looked important. By repeating the launch, it became clear which parts actually needed my input (instance type, key pair, inbound SSH rule) and which should stay at their defaults, such as the security group's outbound rules.
 
 ## Cleanup
 

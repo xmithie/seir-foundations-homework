@@ -7,9 +7,9 @@ Homework evidence for **SEIR Foundations (Class 8)**, Applied Cloud & Platform E
 
 ## Deliverables
 
-| Module | Lab | Topic | Status |
-|---|---|---|---|
-| 1 | [Lab 0](module1/lab0_basics/README.md) | EC2 basics: launch template, SSH, dashboard | In progress |
+| Module | Lab | Topic |
+|---|---|---|
+| 1 | [Lab 0](module1/lab0_basics/README.md) | EC2 basics: launch template, SSH, dashboard |
 
 ## Repo layout
 
