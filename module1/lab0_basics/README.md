@@ -38,7 +38,9 @@ On first connection SSH asked me to confirm the host's ED25519 fingerprint, whic
 
 Public IPv4 `3.21.127.147`. The instance served the web pages below over HTTP on port 80 (`index.html`, `worlds.html`, `hyperdrive.html`).
 
-TODO: add the SSH dashboard screenshot for this instance and describe how it was launched.
+Launched from the same saved launch template as Deployment 1. Besides the SEIR dashboard, I used this instance to host a small custom static site ("Outer Rim Galactic Archives") that I built with the help of an AI assistant, served by Apache on port 80. The screenshots show the three pages loading from the instance's public IPv4.
+
+TODO: add the SSH dashboard screenshot for this instance.
 
 ![Deployment 2 index](screenshots/deployment-2-web-index.png)
 ![Deployment 2 worlds](screenshots/deployment-2-web-worlds.png)
@@ -59,7 +61,7 @@ Readings from Deployment 1:
 
 ## What got easier with repetition
 
-TODO
+Knowing what to change and what to leave alone. On the first launch every setting looked important. By repeating the process from the launch template, it became clear which parts actually needed my input (instance type, key pair, inbound SSH rule) and which should stay at their defaults, such as the security group's outbound rules.
 
 ## Errors and how I fixed them
 
