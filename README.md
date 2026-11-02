@@ -22,7 +22,3 @@ seir-foundations-homework/
 ```
 
 New labs get their own folder under the matching module, each with a `README.md` and a `screenshots/` folder.
-
-## Security note
-
-No private keys, passwords, AWS access keys or tokens are stored in this repo. `.gitignore` blocks `*.pem`, `*.key` and `.env` files.
