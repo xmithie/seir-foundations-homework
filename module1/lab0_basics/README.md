@@ -10,8 +10,8 @@ Launch, connect, observe, repeat. Three separate EC2 deployments from a saved la
 
 | Deployment | Public IPv4 address | Connection method | Screenshot | Instance terminated? |
 |---|---|---|---|---|
-| 1 | `3.23.115.97` | SSH | [deployment-1-ssh-dashboard.png](screenshots/deployment-1-ssh-dashboard.png) | TODO |
-| 2 | `3.21.127.147` | TODO | [web index](screenshots/deployment-2-web-index.png), [worlds](screenshots/deployment-2-web-worlds.png), [hyperdrive](screenshots/deployment-2-web-hyperdrive.png) | TODO |
+| 1 | `3.23.115.97` | SSH | [deployment-1-ssh-dashboard.png](screenshots/deployment-1-ssh-dashboard.png) | Yes |
+| 2 | `3.21.127.147` | TODO | [web index](screenshots/deployment-2-web-index.png), [worlds](screenshots/deployment-2-web-worlds.png), [hyperdrive](screenshots/deployment-2-web-hyperdrive.png) | Yes |
 | 3 | `TODO` | SSH | `screenshots/deployment-3.png` | TODO |
 
 ## Deployment 1
@@ -69,6 +69,6 @@ TODO
 
 ## Cleanup
 
-- [ ] Launch template kept for Lab 1
-- [ ] All practice instances terminated
-- [ ] Checked EC2 for leftover volumes and public IPs
+- [x] Launch template kept for Lab 1 (`MyFirstTemplate`)
+- [x] All practice instances terminated
+- [x] Checked EC2 for leftover volumes and public IPs (none found in us-east-2)
