@@ -1,0 +1,9 @@
+# Never commit keys or secrets
+*.pem
+*.ppk
+*.key
+.env
+*.env
+!*.env.example
+.DS_Store
+Thumbs.db
